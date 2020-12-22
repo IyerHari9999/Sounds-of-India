@@ -17,7 +17,7 @@ button{
 	cursor: pointer;
 }
 body{
-	background-color: #f2f2f2;
+	background-color: #f0f0f0;
 }
 #navbar{
 	display: inline-block;
@@ -30,12 +30,12 @@ body{
 
 #navbar1{
 	display: inline-block;
-	width: 30%;
+	width: 23%;
 	float: left;
 }
 #navbar2{
 	display: inline-block;
-	width: 70%;
+	width: 77%;
 	float: right;
 }
 .tab{
@@ -58,6 +58,8 @@ body{
 	height: 350px;
 	background-image: url("bg.jpg");
 	background-size: cover;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	border-bottom:solid 5px white;
 }
 
 h1{
@@ -87,3 +89,59 @@ img{
 	padding: 0px 5px 0px 5px;
 	font-weight: 300;
 }
+
+.bar{
+	height: 80px;
+	border-top:solid 5px white;
+	border-bottom:solid 5px white;
+	background-image: url("bg2.jpg");
+	background-size: cover;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	padding-top: 15px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+}
+
+.cards{
+	width: 28%;
+	height: 450px;
+	margin: 20px 10px 10px 10px; 
+	border-radius: 7px;
+	float: unset;
+	display: inline-block;
+	background-image: url("bg3.jpg");
+	background-size: cover;
+	border:solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	text-align: center;
+	vertical-align: middle;
+}
+#cards-container{
+	text-align: center;
+}
+.card-title{
+	width: 100%;
+	padding: 20px;
+	display: inline-block;
+	color: white;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0.6);
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+.card-details{
+	width: 100%;
+	padding: 15px;
+	display: inline-block;
+	color: white;
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	line-height: 120%;
+}
+
