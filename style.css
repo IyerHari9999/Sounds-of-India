@@ -7,11 +7,14 @@
 	scroll-behavior: smooth;
 }
 *:hover{
-	transition-duration: .5s;
+	transition-duration: .3s;
 }
 a{
 	text-decoration: none;
 	cursor: pointer;
+}
+b{
+	font-weight: 700;
 }
 button{
 	cursor: pointer;
@@ -71,6 +74,7 @@ h1{
 }
 h2{
 	color: white;
+	padding-top: 5px;
 	font-weight: 300;
 	font-size: 32px;
 	letter-spacing: 6px;
@@ -90,6 +94,10 @@ img{
 	font-weight: 300;
 }
 
+.handles:hover{
+	color: skyblue;
+}
+
 .bar{
 	height: 80px;
 	border-top:solid 5px white;
@@ -106,8 +114,8 @@ img{
 }
 
 .cards{
-	width: 28%;
-	height: 450px;
+	width: 400px;
+	height: 600px;
 	margin: 20px 10px 10px 10px; 
 	border-radius: 7px;
 	float: unset;
@@ -124,11 +132,11 @@ img{
 }
 .card-title{
 	width: 100%;
-	padding: 20px;
+	padding: 15px;
 	display: inline-block;
 	color: white;
-	font-size: 35px;
-	font-weight: 700;
+	font-size: 20px;
+	font-weight: 500;
 	letter-spacing: 1px;
 	background-color: rgba(0,0,0,0.6);
 	text-transform: uppercase;
@@ -139,9 +147,40 @@ img{
 	padding: 15px;
 	display: inline-block;
 	color: white;
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: 500;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	line-height: 120%;
+	text-align: left;
+}
+
+.card-inner-details{
+	padding: 5px 0px 3px 0px;
+	display: inline-block;
+	float: left;
+}
+.card-inner-container{
+	display: inline-block;
+	width: 100%;
+}
+.watch-button{
+	text-align: center;
+	float: right;
+	background-color: #272e68;
+	color: white;
+	border:solid .1px white;
+	display: inline-block;
+	margin:	2px 0px 3px 0px;
+	padding: 2px 10px 0px 10px;
+	border-radius: 3px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 700;
+	width: 60px;
+	letter-spacing: 1px;
+}
+.watch-button:hover{
+	background-color: white;
+	color: #272e68;
 }
 
