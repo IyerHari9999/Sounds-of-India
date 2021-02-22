@@ -8,6 +8,31 @@
 	<link rel="stylesheet" type="text/css" href="style_mobile.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	
+	<script type="text/javascript">
+	(function() {
+	emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
+	})();
+	</script>
+
+	<script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
 </head>
 <body>
 
@@ -204,15 +229,15 @@
 	<div id="contact" style="padding-top: 40px;"></div>
 	<div class="bar">CONTACT</div>
 
-	<form action="contact.php" class="contact-form">
+	<form id="contact-form">
 	Name:<br>
 	<input type="text" size="19" name="name"><br><br>
 	Name:<br>
-	<input type="text" size="19" name="email"><br><br>
+	<input type="email" size="19" name="email"><br><br>
 	Message:<br> <textarea name="comment" rows="6" cols="20"></textarea><br><br>
 
-	<button class="submit-button">SendMessage</button>
-
+	<button class="submit-button" type="submit">SendMessage</button>
+	</form>
 
 
 </body>
