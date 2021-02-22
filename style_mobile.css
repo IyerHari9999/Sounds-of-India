@@ -65,7 +65,8 @@ h2{
   color: white;
   font-size: 13px;
   padding: 0px 0px 0px 3px;
-  font-weight: 300;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .handles-seperator{
   font-size: 13px;
