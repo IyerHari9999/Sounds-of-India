@@ -5,46 +5,71 @@
 	<link rel="icon" href="soi_logo.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style_mobile.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+	<!--Only for pc navbar -->
 	<div id="navbar">
 	<div id="navbar1">
 		<a href="index.html">
-		<img src="soi_logo.png" style="height: 35px; vertical-align: middle; margin: 7px 5px 12px 20px; display: inline-block;">
-		<span style="color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px;">Sounds of India</span>
+		<img src="soi_logo.png" style="height: 30px; vertical-align: middle; margin: 10px 5px 12px 20px; display: inline-block;">
+		<span style="color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; font-size: 17px; ">Sounds of India</span>
 	</a>
 	</div>
 	<div id="navbar2">
 		<a href="#contact"><div class="tab">Contact</div></a>
-		<a href="#about"><div class="tab">About</div></a>
 		<a href="#media"><div class="tab">Media</div></a>
 		<a href="#schedule"><div class="tab">Schedule</div></a>
 		<a href="#home"><div class="tab">Home</div></a>
 	</div>
 	</div>
-	<div id="home" style="padding-top: 45px;"></div>
+
+	<!--Only for mobile navbar -->
+	<div id="mobile-navbar" class="pc-hide">
+	<div id="mobile-logo">
+		<img src="soi_logo.png" style="height: 28px; vertical-align: middle; margin: 15px 5px 12px 20px; display: inline-block; padding-bottom: 6px;">
+		<span style="font-size:18px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px;">Sounds of India</span>
+	</a>
+	</div>
+
+	</div>
+
+
+	<!--page -->
+	<div id="home" style="padding-top: 20px;"></div>
 	<div id="start">
 		<h1>SOUNDS OF INDIA</h1>
 		<h2>INDIAN MUSIC REDEFINED</h2>
 		<div id="social-handles" style="color: white;">
+
 		<a href="https://www.facebook.com/soundsofindiaig" target="_blank">
-		<img src="fb.png" style="height: 30px;"><span class="handles">fb/soundsofindiaig</span></a>&ensp;|&ensp;
+		<img src="fb.png"><span class="handles  mobile-hide">fb/soundsofindiaig</span>
+		<span class="handles pc-hide">FaceBook</span></a>
+
+		<span class="handles-seperator">&ensp;|&ensp;</span>
+
 		<a href="https://www.youtube.com/channel/UCCSe_UIZLdQvBw0a77vqntQ" target="_blank">
-		<img src="yt.png" style="height: 30px;"><span class="handles">youtube/soundsofindiaig</span></a>&ensp;|&ensp;
+		<img src="yt.png"><span class="handles  mobile-hide">youtube/soundsofindiaig</span>
+		<span class="handles pc-hide">YouTube</span></a>
+
+		<span class="handles-seperator">&ensp;|&ensp;</span>
+
 		<a href="https://t.me/soundsofindia" target="_blank">
-		<img src="tg.png" style="height: 30px;"><span class="handles">t.me/soundsofindia</span></a>
+		<img src="tg.png"><span class="handles mobile-hide">t.me/soundsofindia</span>
+		<span class="handles pc-hide">Telegram</span></a>
 		</div>
 	</div>
 
-	<div id="schedule" style="padding-top: 45px;"></div>
+	<div id="schedule" style="padding-top: 20px;"></div>
 	<div class="bar">SCHEDULE</div>
 	<div id="cards-container">
 
 	<div class="cards">
-		<div class="card-title">Dasavani Season 1<br><h2>BADRACHALA<br>RAMADASAR</h2>
-		<span style="color: lime; letter-spacing: 2px; font-size: 15px;">Completed Series (1st Feb to 14th Feb)</span>
+		<div class="card-title">Dasavani Season 1<br><h2 class="series-title">BADRACHALA<br>RAMADASAR</h2>
+		<span style="color: lime;" class="schedule-status">Completed Series (1st Feb to 14th Feb)</span>
 		</div>
 		<div class="card-details">
 			<div class="card-inner-container">
@@ -91,8 +116,8 @@
 	</div>	
 
 	<div class="cards">
-		<div class="card-title">Dasavani Season 2<br><h2>PURANDARA<br>DASAR</h2>
-		<span style="color: tomato; letter-spacing: 2px; font-size: 15px;">Ongoing Series (21st Feb to 6th Mar)</span>
+		<div class="card-title">Dasavani Season 2<br><h2 class="series-title">PURANDARA<br>DASAR</h2>
+		<span style="color: tomato;" class="schedule-status">Ongoing Series (21st Feb to 6th Mar)</span>
 		</div>
 		<div class="card-details">
 			<div class="card-inner-container">
@@ -120,7 +145,7 @@
 			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
 			</div>
 			<div class="card-inner-container">
-			<div class="card-inner-details">Govindha Ninna • Kum. Meenakshi Kannan</div>
+			<div class="card-inner-details">Govindha Ninna • Kum. Meenakshi</div>
 			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
 			</div>
 			<div class="card-inner-container">
@@ -141,8 +166,8 @@
 	<br>
 
 	<div class="cards">
-		<div class="card-title">Dasavani Season 3<br><h2>SADASHIVA<br>BRAHMENDRAL</h2>
-		<span style="color: skyblue; letter-spacing: 2px; font-size: 15px;">Coming soon</span>
+		<div class="card-title">Dasavani Season 3<br><h2 class="series-title">SADASHIVA<br>BRAHMENDRAL</h2>
+		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
 		</div>
 
 		<img src="krishna.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >
@@ -150,8 +175,8 @@
 	</div>
 
 	<div class="cards">
-		<div class="card-title">Dasavani Season 4<br><h2>GOPALAKRISHNA<br>BHARATHI</h2>
-		<span style="color: skyblue; letter-spacing: 2px; font-size: 15px;">Coming soon</span>
+		<div class="card-title">Dasavani Season 4<br><h2 class="series-title">GOPALAKRISHNA<br>BHARATHI</h2>
+		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
 		</div>
 
 		<img src="shiva.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >
@@ -160,8 +185,8 @@
 	</div>
 
 	<div class="cards">
-		<div class="card-title">Dasavani Season 5<br><h2>THYAGARAJA<br>SWAMIGAL</h2>
-		<span style="color: skyblue; letter-spacing: 2px; font-size: 15px;">Coming soon</span>
+		<div class="card-title">Dasavani Season 5<br><h2 class="series-title">THYAGARAJA<br>SWAMIGAL</h2>
+		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
 		</div>
 
 		<img src="rama.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >
@@ -171,11 +196,11 @@
 	
 	</div>
 	</div>
-	<div id="media" style="padding-top: 45px;"></div>
+	<div id="media" style="padding-top: 20px;"></div>
 	<div class="bar">MEDIA</div>
-	<div id="about" style="padding-top: 45px;"></div>
+	<div id="about" style="padding-top: 20px;"></div>
 	<div class="bar">ABOUT</div>
-	<div id="contact" style="padding-top: 45px;"></div>
+	<div id="contact" style="padding-top: 20px;"></div>
 	<div class="bar">CONTACT</div>
 
 </body>
