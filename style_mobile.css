@@ -90,6 +90,7 @@ hr{
 }
 
 #cross-box{
+  display: inline-block;
   font-size: 20px;
   font-family: arial;
   font-weight: 700;
@@ -342,7 +343,7 @@ sup{
 }
 
 .mhandle{
-  padding: 8px;
+  padding: 6px;
   text-align: center;
   
 }
