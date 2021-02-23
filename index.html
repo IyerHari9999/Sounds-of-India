@@ -8,30 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="style_mobile.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-
+	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
-})();
-</script>
-
 	<script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+	(function() {
+	emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
+	})();
+	</script>
 
 </head>
 <body>
@@ -60,7 +43,6 @@ emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
 		<span style="font-size:18px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px;">Sounds of India</span>
 	</a>
 	</div>
-
 	</div>
 
 
@@ -228,18 +210,15 @@ emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
 	<div class="bar">ABOUT</div>
 	<div id="contact" style="padding-top: 40px;"></div>
 	<div class="bar">CONTACT</div>
-
-	<form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
-
+	<center>
+	<div id="contact-form">
+	<h3>Enter your Full Name <sup>*</sup></h3><input type="text" id="fromName" required><br>
+	<h3>Enter your Contact Number <sup>*</sup></h3><input type="tel" id="phoneNumber" required><br>
+	<h3>Enter your mail-Id <sup>*</sup></h3><input type="email" id="mailId" required><br>
+	<h3>Comments :</h3><textarea id="comment" rows="2"></textarea><br>
+	<button onclick="sendMail()" disabled>Contact Us</button>
+	</div>
+	</center>
 
 </body>
 </html>
