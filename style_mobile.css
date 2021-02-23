@@ -101,7 +101,7 @@ hr{
 
 #start{
   height: 200px;
-  background-image: url("bg.jpg");
+  background-image: url("Images/bg.jpg");
   background-size: cover;
   box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
   border-bottom:solid 5px white;
@@ -148,7 +148,7 @@ h2{
   height: 60px;
   border-top:solid 5px white;
   border-bottom:solid 5px white;
-  background-image: url("bg2.jpg");
+  background-image: url("Images/bg2.jpg");
   background-size: cover;
   color: white;
   text-align: center;
@@ -166,7 +166,7 @@ h2{
   border-radius: 7px;
   float: unset;
   display: inline-block;
-  background-image: url("bg3.jpg");
+  background-image: url("Images/bg3.jpg");
   background-size: cover;
   border:solid 5px white;
   box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
