@@ -33,6 +33,6 @@ function showhide()
          }  
          else
          {  
-             div.style.display = "block";  
+             div.style.display = "block"; 
          }  
     } 

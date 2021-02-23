@@ -30,32 +30,32 @@
 }
 
 #hamburger{
-  height: 30px;
-  margin-left: 10px;
+  height: 35px;
   display: block;
-  width: 30px;
+  width: 35px;
   border: solid 1px black;
   border-radius: 3px;
   float: left;
-  margin-top: 10px;
-  padding-top: 5px;
+  margin: 7px;
+  padding-top: 7px;
   background-color: #272e68;
   position: fixed;
 }
 
 hr{
-  margin: 4px 5px 4px 5px;
+  margin: 10px 5px 4px 7px;
   width: 18px;
   height: 2px;
   margin-top: 2px;
   border:solid 1px white;
+  background-color: white;
 }
 
 #sidebar{
   display: none;
   position: fixed;
   width: 75%;
-  height: 100%;
+  height: 200%;
   background-color: white;
   border-bottom-right-radius: 3px;
   box-shadow: 4px 0px 8px rgba(0,0,0,0.5);
@@ -68,17 +68,18 @@ hr{
   width: 100%;
   padding: 22px 0px 20px 0px;
   text-align: center;
-
+  letter-spacing: 2px;
   background-color: #272e68;
   color: white;
   margin-bottom: 1px;
+  font-weight: normal;
 }
 
 .tabmob:hover{
   background-color: #d6ddff;
   color: #272e68;
   margin-bottom: 1px;
-  transition-duration: .2s;
+  transition-duration: .3s;
 }
 
 .cross{
@@ -91,7 +92,7 @@ hr{
 #cross-box{
   font-size: 20px;
   font-family: arial;
-  font-weight: 600;
+  font-weight: 700;
   padding: 15px 20px 15px 20px;
   border-radius: 0px 0px 0px 5px;
   float: right;
@@ -135,7 +136,7 @@ h2{
   color: white;
   font-size: 13px;
   padding: 0px 0px 0px 3px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 .handles-seperator{
