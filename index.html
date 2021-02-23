@@ -37,14 +37,28 @@
 	</div>
 
 	<!--Only for mobile navbar -->
+	
+
 	<div id="mobile-navbar" class="pc-hide">
 	<div id="mobile-logo">
-		<div id="hamburger"><hr><hr><hr></div>
+		<div id="hamburger" onclick="showhide()"><hr><hr><hr></div>
 		<!--img src="soi_logo.png" style="height: 35px; vertical-align: middle; margin: 12px 5px 6px -5px; display: inline-block; padding-bottom: 10px;"-->
 
 		<div style=" display: inline-block; font-size: 22px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 9px; padding-left: -1; ">Sounds of India</div>
-
 	</div>
+	</div>
+	<div id="sidebar" class="pc-hide">
+		<div class="cross"><div id="cross-box" onclick="showhide()">X</div></div>
+		<center style="margin-bottom: 20px;">
+		<img src="soi_logo.png" style="height: 38px; vertical-align: middle; margin: 10px 2px 4px -5px; display: inline-block; padding-bottom: 10px;">
+		<div style=" display: inline-block; font-size: 20px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 9px; padding-left: -1; ">Sounds of India</div>
+	</center>
+
+		<a href="#home"><div class="tabmob" onclick="showhide()">Home</div></a>
+		<a href="#schedule"><div class="tabmob" onclick="showhide()">Schedule</div></a>
+		<a href="#media"><div class="tabmob" onclick="showhide()">Media</div></a>
+		<a href="#about"><div class="tabmob" onclick="showhide()">About</div></a>
+		<a href="#contact"><div class="tabmob" onclick="showhide()">Contact</div></a>	
 	</div>
 
 
@@ -76,54 +90,6 @@
 	<div id="schedule" style="padding-top: 40px;"></div>
 	<div class="bar">SCHEDULE</div>
 	<div id="cards-container">
-
-	<div class="cards">
-		<div class="card-title">Dasavani Season 1<br><h2 class="series-title">BADRACHALA<br>RAMADASAR</h2>
-		<span style="color: lime;" class="schedule-status">Completed Series (1st Feb to 14th Feb)</span>
-		</div>
-		<div class="card-details">
-			<div class="card-inner-container">
-			<div class="card-inner-details">Ee Vela Nannu • Sri. O S Mukundan</div>
-			<a class="watch-button" href="https://fb.watch/3NLGV9bvUI/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Edanunaado • Sri. Shankar Mohanram</div>
-			<a class="watch-button" href="https://fb.watch/3NYovgBoEO/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Kalaye Gopalam • Sri. P S Ramachandran</div>
-			<a class="watch-button" href="https://fb.watch/3NYptoRvG8/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Kurume Raghuvara • Sri. Ramanathan </div>
-			<a class="watch-button" href="https://fb.watch/3NYqlBX-v5/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Nanu Brovamani • Sri. Srinivasan </div>
-			<a class="watch-button" href="https://fb.watch/3NYr5t1CSf/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Bhavaye • Sri. P S Ramachandran </div>
-			<a class="watch-button" href="https://fb.watch/3NYrM3htN_/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Ento Mahanubhavudu • Sri. Srinidhi G </div>
-			<a class="watch-button" href="https://fb.watch/3NYvPmvB5u/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Sri Ramula • Sri. Santosh Sundaram </div>
-			<a class="watch-button" href="https://fb.watch/3NYtfR41ZO/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Palaya maam • Sri. Satish Sundaram </div>
-			<a class="watch-button" href="https://fb.watch/3NYug1fNXx/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">O Rama Nee • Sri. Kumar Krishnan </div>
-			<a class="watch-button" href="https://fb.watch/3NYv3dvTTR/" target="_blank">Watch</a>
-			</div>
-		</div>
-	</div>	
 
 	<div class="cards">
 		<div class="card-title">Dasavani Season 2<br><h2 class="series-title">PURANDARA<br>DASAR</h2>
@@ -173,6 +139,54 @@
 		</div>
 	</div>
 
+	<div class="cards">
+		<div class="card-title">Dasavani Season 1<br><h2 class="series-title">BADRACHALA<br>RAMADASAR</h2>
+		<span style="color: lime;" class="schedule-status">Completed Series (1st Feb to 14th Feb)</span>
+		</div>
+		<div class="card-details">
+			<div class="card-inner-container">
+			<div class="card-inner-details">Ee Vela Nannu • Sri. O S Mukundan</div>
+			<a class="watch-button" href="https://fb.watch/3NLGV9bvUI/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Edanunaado • Sri. Shankar Mohanram</div>
+			<a class="watch-button" href="https://fb.watch/3NYovgBoEO/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Kalaye Gopalam • Sri. P S Ramachandran</div>
+			<a class="watch-button" href="https://fb.watch/3NYptoRvG8/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Kurume Raghuvara • Sri. Ramanathan </div>
+			<a class="watch-button" href="https://fb.watch/3NYqlBX-v5/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Nanu Brovamani • Sri. Srinivasan </div>
+			<a class="watch-button" href="https://fb.watch/3NYr5t1CSf/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Bhavaye • Sri. P S Ramachandran </div>
+			<a class="watch-button" href="https://fb.watch/3NYrM3htN_/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Ento Mahanubhavudu • Sri. Srinidhi G </div>
+			<a class="watch-button" href="https://fb.watch/3NYvPmvB5u/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Sri Ramula • Sri. Santosh Sundaram </div>
+			<a class="watch-button" href="https://fb.watch/3NYtfR41ZO/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">Palaya maam • Sri. Satish Sundaram </div>
+			<a class="watch-button" href="https://fb.watch/3NYug1fNXx/" target="_blank">Watch</a>
+			</div>
+			<div class="card-inner-container">
+			<div class="card-inner-details">O Rama Nee • Sri. Kumar Krishnan </div>
+			<a class="watch-button" href="https://fb.watch/3NYv3dvTTR/" target="_blank">Watch</a>
+			</div>
+		</div>
+	</div>	
+
 	<br>
 
 	<div class="cards">
@@ -180,8 +194,7 @@
 		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
 		</div>
 
-		<img src="krishna.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >
-			
+		<img src="krishna.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >	
 	</div>
 
 	<div class="cards">
@@ -189,9 +202,7 @@
 		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
 		</div>
 
-		<img src="shiva.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >
-
-			
+		<img src="shiva.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >	
 	</div>
 
 	<div class="cards">
@@ -199,8 +210,7 @@
 		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
 		</div>
 
-		<img src="rama.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >
-			
+		<img src="rama.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >	
 	</div>
 
 	

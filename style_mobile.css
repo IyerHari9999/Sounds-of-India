@@ -51,6 +51,52 @@ hr{
   border:solid 1px white;
 }
 
+#sidebar{
+  display: none;
+  position: fixed;
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  border-bottom-right-radius: 3px;
+  box-shadow: 4px 0px 8px rgba(0,0,0,0.5);
+
+}
+
+.tabmob{
+  float: right;
+  font-size: 20px;
+  width: 100%;
+  padding: 22px 0px 20px 0px;
+  text-align: center;
+
+  background-color: #272e68;
+  color: white;
+  margin-bottom: 1px;
+}
+
+.tabmob:hover{
+  background-color: #d6ddff;
+  color: #272e68;
+  margin-bottom: 1px;
+  transition-duration: .2s;
+}
+
+.cross{
+  width: 100%;
+  text-align: right;
+  color: #272e68;
+  float: right;
+}
+
+#cross-box{
+  font-size: 20px;
+  font-family: arial;
+  font-weight: 600;
+  padding: 15px 20px 15px 20px;
+  border-radius: 0px 0px 0px 5px;
+  float: right;
+}
+
 #start{
   height: 200px;
   background-image: url("bg.jpg");
