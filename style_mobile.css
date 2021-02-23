@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
  
  .mobile-hide{
   display: none;
@@ -339,4 +339,22 @@ sup{
   letter-spacing: .5px;
   box-shadow: 5px 0px 10px rgba(0,0,0,.2);
   border-top: solid 0px black;
+}
+
+.mhandle{
+  padding: 8px;
+  text-align: center;
+  
+}
+
+.mhandle-img{
+  height: 18px;
+}
+.mhandles{
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: skyblue;
+  font-size: 18px;
+}
+
 }
