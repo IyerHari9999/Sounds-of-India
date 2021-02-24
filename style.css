@@ -1,50 +1,59 @@
-*{
+* {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	outline:none;
+	outline: none;
 	scroll-behavior: smooth;
 }
-*:hover{
+
+*:hover {
 	transition-duration: .3s;
 }
-a{
+
+a {
 	text-decoration: none;
 	cursor: pointer;
 }
-b{
+
+b {
 	font-weight: 700;
 }
-.pc-hide{
+
+.pc-hide {
 	display: none;
 }
-button{
+
+button {
 	cursor: pointer;
 }
-body{
+
+body {
 	background-color: #f0f0f0;
 }
-#navbar{
+
+#navbar {
 	display: inline-block;
 	width: 100%;
 	position: fixed;
 	background-color: white;
 	height: 50px;
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#navbar1{
+#navbar1 {
 	display: inline-block;
 	width: 25%;
 	float: left;
 }
-#navbar2{
+
+#navbar2 {
 	display: inline-block;
 	width: 75%;
 	float: right;
 }
-.tab{
+
+.tab {
 	text-align: center;
 	float: right;
 	background-color: #272e68;
@@ -57,27 +66,30 @@ body{
 	width: 80px;
 	font-size: 16px;
 }
-.tab:hover{
+
+.tab:hover {
 	background-color: white;
 	color: #272e68;
-	border:solid 1px #272e68;
+	border: solid 1px #272e68;
 }
-#start{
+
+#start {
 	height: 350px;
 	background-image: url("Images/bg.jpg");
 	background-size: cover;
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
-	border-bottom:solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+	border-bottom: solid 5px white;
 }
 
-h1{
+h1 {
 	padding-top: 90px;
 	color: white;
 	font-size: 75px;
 	text-align: center;
 	font-weight: 500;
 }
-h2{
+
+h2 {
 	color: white;
 	padding-top: 5px;
 	font-weight: 300;
@@ -85,33 +97,35 @@ h2{
 	letter-spacing: 6px;
 	text-align: center;
 }
-img{
+
+img {
 	vertical-align: middle;
 }
-#social-handles{
+
+#social-handles {
 	margin-top: 30px;
 	text-align: center;
 }
 
-#social-handles img{
+#social-handles img {
 	height: 30px;
 }
 
-.handles{
+.handles {
 	color: white;
 	font-size: 20px;
 	padding: 0px 5px 0px 5px;
 	font-weight: 300;
 }
 
-.handles:hover{
+.handles:hover {
 	color: skyblue;
 }
 
-.bar{
+.bar {
 	height: 80px;
-	border-top:solid 5px white;
-	border-bottom:solid 5px white;
+	border-top: solid 5px white;
+	border-bottom: solid 5px white;
 	background-image: url("Images/bg2.jpg");
 	background-size: cover;
 	color: white;
@@ -120,27 +134,29 @@ img{
 	font-weight: 500;
 	letter-spacing: 3px;
 	padding-top: 15px;
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.cards{
+.cards {
 	width: 400px;
 	height: 600px;
-	margin: 20px 10px 10px 10px; 
+	margin: 20px 10px 10px 10px;
 	border-radius: 5px;
 	float: unset;
 	display: inline-block;
 	background-image: url("Images/bg3.jpg");
 	background-size: cover;
-	border:solid 5px white;
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	border: solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	vertical-align: middle;
 }
-#cards-container{
+
+#cards-container {
 	text-align: center;
 }
-.card-title{
+
+.card-title {
 	width: 100%;
 	padding: 15px;
 	display: inline-block;
@@ -148,11 +164,12 @@ img{
 	font-size: 20px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	text-transform: uppercase;
 	margin-top: 20px;
 }
-.card-details{
+
+.card-details {
 	width: 100%;
 	padding: 15px;
 	display: inline-block;
@@ -164,27 +181,30 @@ img{
 	text-align: left;
 }
 
-.card-inner-details{
+.card-inner-details {
 	padding: 5px 0px 3px 0px;
 	display: inline-block;
 	float: left;
 }
-.card-inner-container{
+
+.card-inner-container {
 	display: inline-block;
 	width: 100%;
 }
-.schedule-status{
-   letter-spacing: 2px;
-   font-size: 15px;
+
+.schedule-status {
+	letter-spacing: 2px;
+	font-size: 15px;
 }
-.watch-button{
+
+.watch-button {
 	text-align: center;
 	float: right;
 	background-color: #272e68;
 	color: white;
-	border:solid .1px white;
+	border: solid .1px white;
 	display: inline-block;
-	margin:	2px 0px 3px 0px;
+	margin: 2px 0px 3px 0px;
 	padding: 2px 10px 0px 10px;
 	border-radius: 3px;
 	font-size: 15px;
@@ -193,12 +213,13 @@ img{
 	width: 60px;
 	letter-spacing: 1px;
 }
-.watch-button:hover{
+
+.watch-button:hover {
 	background-color: white;
 	color: #272e68;
 }
 
-#contact-form{
+#contact-form {
 	text-align: left;
 	float: unset;
 	margin: 30px;
@@ -207,20 +228,20 @@ img{
 	padding-right: 15%;
 	padding-left: 15%;
 	height: 455px;
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 	background-color: white;
 	border-radius: 5px;
 	border: solid 1px #272e68;
 }
 
-h3{
+h3 {
 	font-size: 22px;
 	padding-bottom: 6px;
 	color: #272e68;
 	font-weight: normal;
 }
 
-input{
+input {
 	font-size: 22px;
 	height: 35px;
 	padding-left: 10px;
@@ -232,11 +253,11 @@ input{
 	font-weight: normal;
 }
 
-input:focus{
-	background-color: #d6ddff; 
+input:focus {
+	background-color: #d6ddff;
 }
 
-textarea{
+textarea {
 	font-size: 22px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -249,11 +270,11 @@ textarea{
 	font-weight: normal;
 }
 
-textarea:focus{
-	background-color: #d6ddff; 
+textarea:focus {
+	background-color: #d6ddff;
 }
 
-button{
+button {
 	width: 100%;
 	height: 40px;
 	font-size: 20px;
@@ -264,22 +285,22 @@ button{
 	border: none;
 }
 
-button:hover{
-	border:solid 1px #272e68;
+button:hover {
+	border: solid 1px #272e68;
 	color: #272e68;
-	background-color: #d6ddff; 
+	background-color: #d6ddff;
 }
 
-h5{
+h5 {
 	display: inline-block;
 }
 
-sup{
+sup {
 	font-size: 17px;
 	color: red;
 }
 
-#footer{
+#footer {
 	text-align: center;
 	height: 40px;
 	padding-top: 13px;
@@ -287,38 +308,38 @@ sup{
 	color: #272e68;
 	font-size: 17px;
 	letter-spacing: .5px;
-	box-shadow: 4px 0px 8px rgba(0,0,0,0.3);
+	box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.3);
 	border-top: solid 1px #272e68;
 }
 
-#video{
+#video {
 	text-align: center;
-	border:none;
-	overflow:hidden;
+	border: none;
+	overflow: hidden;
 	border-radius: 3px;
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 	width: 700px;
 	height: 440px;
 	background-color: black;
 	border: solid 5px white;
 }
 
-#video-container{
+#video-container {
 	width: 100%;
 	text-align: center;
 	margin-top: 20px;
 }
 
-.media-header{
+.media-header {
 	margin-top: 20px;
 	float: unset;
 	text-align: center;
 	width: 700px;
 	border-radius: 3px;
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 	background-image: url("Images/bg2.jpg");
-  	background-size: cover;
-  	border: solid 5px white;
+	background-size: cover;
+	border: solid 5px white;
 	color: white;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -326,12 +347,13 @@ sup{
 	padding-top: 18px;
 }
 
-#image-gallery{
+#image-gallery {
 	margin-top: 20px;
 	width: 700px;
 	float: unset;
 }
-#image-gallery iframe{
+
+#image-gallery iframe {
 	width: 336px;
 	height: 336px;
 	margin-left: 6px;
@@ -339,12 +361,13 @@ sup{
 	margin-bottom: 15px;
 	border-radius: 5px;
 	border: solid 5px white;
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
-.blogs{
+
+.blogs {
 	width: 700px;
 	height: 200px;
-	margin: 20px 10px 10px 10px; 
+	margin: 20px 10px 10px 10px;
 	border-radius: 5px;
 	padding-left: 100px;
 	padding-right: 100px;
@@ -352,34 +375,34 @@ sup{
 	display: inline-block;
 	background-image: url("Images/bg3.jpg");
 	background-size: cover;
-	border:solid 5px white;
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	border: solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	vertical-align: middle;
 }
 
-#about-logo{
+#about-logo {
 	float: unset;
 	padding: 50px;
 	width: 300px;
 	height: 300px;
 	background-color: white;
 	margin: 20px;
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 }
 
-.about-details{
+.about-details {
 	width: 500px;
 	height: 300px;
-	margin: 20px; 
+	margin: 20px;
 	border-radius: 5px;
 	float: unset;
 	display: inline-block;
 	background-image: url("Images/bg3.jpg");
 	background-size: cover;
-	border:solid 5px white;
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	border: solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	vertical-align: middle;
 	color: white;
@@ -387,5 +410,4 @@ sup{
 	padding: 20px;
 	line-height: 1.1;
 	letter-spacing: 2px;
-
 }

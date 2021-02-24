@@ -2,300 +2,418 @@
 <html>
 <head>
 	<title>Sounds of India</title>
-	<link rel="icon" href="Images/soi_logo.png" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style_mobile.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-	<script type="text/javascript">
-	(function() {
-	emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
-	})();
+	<link href="Images/soi_logo.png" rel="icon" type="image/x-icon">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="style_mobile.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href=
+	"https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap"
+	rel="stylesheet">
+	<script src="script.js" type="text/javascript">
 	</script>
-
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+	type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	   (function() {
+	   emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
+	   })();
+	</script>
 </head>
 <body onload="showhide()">
-
-	<!--Only for pc navbar -->
+	<!--Menubar for pc-->
 	<div id="navbar">
-	<div id="navbar1">
-		<a href="">
-		<img src="Images/soi_logo.png" style="height: 30px; vertical-align: middle; margin: 10px 5px 12px 20px; display: inline-block;">
-		<span style="color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; font-size: 17px; ">Sounds of India</span>
-	</a>
+		<div id="navbar1">
+			<a href=""><img src="Images/soi_logo.png" style=
+			"height: 30px; vertical-align: middle; margin: 10px 5px 12px 20px; display: inline-block;">
+			<span style=
+			"color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; font-size: 17px;">
+			Sounds of India</span></a>
+		</div>
+		<div id="navbar2">
+			<a href="#contact">
+			<div class="tab">
+				Contact
+			</div></a> <a href="#about">
+			<div class="tab">
+				About
+			</div></a> <a href="#media">
+			<div class="tab">
+				Media
+			</div></a> <a href="#schedule">
+			<div class="tab">
+				Schedule
+			</div></a> <a href="#home">
+			<div class="tab">
+				Home
+			</div></a>
+		</div>
 	</div>
-	<div id="navbar2">
-		<a href="#contact"><div class="tab">Contact</div></a>
-		<a href="#about"><div class="tab">About</div></a>
-		<a href="#media"><div class="tab">Media</div></a>
-		<a href="#schedule"><div class="tab">Schedule</div></a>
-		<a href="#home"><div class="tab">Home</div></a>
+	<!--Menubar, Hamburger & Sidebar for mobile-->
+	<div class="pc-hide" id="mobile-navbar">
+		<div id="hamburger" onclick="showhide()">
+			<hr>
+			<hr>
+			<hr>
+		</div>
+		<div id="mobile-logo">
+			<!--img src="Images/soi_logo.png" style="height: 35px; vertical-align: middle; margin: 12px 5px 6px -5px; display: inline-block; padding-bottom: 10px;"-->
+			<div style=
+			" display: inline-block; font-size: 20px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 11px; padding-left: -1;">
+				Sounds of India
+			</div>
+		</div>
 	</div>
-	</div>
-
-	<!--Only for mobile navbar -->
-	
-
-	<div id="mobile-navbar" class="pc-hide">
-		<div id="hamburger" onclick="showhide()"><hr><hr><hr></div>
-	<div id="mobile-logo">
-		
-		<!--img src="Images/soi_logo.png" style="height: 35px; vertical-align: middle; margin: 12px 5px 6px -5px; display: inline-block; padding-bottom: 10px;"-->
-
-		<div style=" display: inline-block; font-size: 20px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 11px; padding-left: -1; ">Sounds of India</div>
-	</div>
-	</div>
-	<div id="sidebar" class="pc-hide">
+	<div class="pc-hide" id="sidebar">
 		<div class="cross">
-			<center style="display: inline-block; float: left; margin-left: 13px; margin-top: 2px;">
-		<img src="Images/soi_logo.png" style="height: 38px; vertical-align: middle; margin: 10px 2px 4px 0px; display: inline-block; padding-bottom: 10px;">
-		<div style=" display: inline-block; font-size: 19px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 9px; padding-left: -1; ">Sounds of India</div>
-		</center>
-			<div id="cross-box" onclick="showhide()">X</div></div>
-
-		
-
-		<a href="#home"><div class="tabmob" onclick="showhide()">Home</div></a>
-		<a href="#schedule"><div class="tabmob" onclick="showhide()">Schedule</div></a>
-		<a href="#media"><div class="tabmob" onclick="showhide()">Media</div></a>
-		<a href="#about"><div class="tabmob" onclick="showhide()">About</div></a>
-		<a href="#contact"><div class="tabmob" onclick="showhide()">Contact</div></a>
-	<div style="background-color: #272e68; display: inline-block; width: 100%; margin-top: 1px; height: 165px; padding-top: 20px; text-align: center;" >
-		<h3 style="color: white; margin-bottom: 5px; letter-spacing: 1px; font-size: 20px; font-weight: 200;">Our Social Handles</h3>
-
-	<div class="mhandle">
-	<a href="https://www.facebook.com/soundsofindiaig" target="_blank">
-	<img src="Images/fb.png" class="mhandle-img"><span class="mhandles">&ensp;fb/soundsofindiaig</span></a></div>
-	<div class="mhandle">
-		<a href="https://www.youtube.com/channel/UCCSe_UIZLdQvBw0a77vqntQ" target="_blank">
-	<img src="Images/yt.png" class="mhandle-img"><span class="mhandles">&ensp;youtube/soundsofindiaig</span></a></div>
-	<div class="mhandle">
-		<a href="https://t.me/soundsofindia" target="_blank">
-	<img src="Images/tg.png" class="mhandle-img"><span class="mhandles">&ensp;t.me/soundsofindia</span></a></div>
+			<center style=
+			"display: inline-block; float: left; margin-left: 13px; margin-top: 2px;">
+				<img src="Images/soi_logo.png" style=
+				"height: 38px; vertical-align: middle; margin: 10px 2px 4px 0px; display: inline-block; padding-bottom: 10px;">
+				<div style=
+				" display: inline-block; font-size: 19px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 9px; padding-left: -1;">
+					Sounds of India
+				</div>
+			</center>
+			<div id="cross-box" onclick="showhide()">
+				X
+			</div>
+		</div><a href="#home">
+		<div class="tabmob" onclick="showhide()">
+			Home
+		</div></a> <a href="#schedule">
+		<div class="tabmob" onclick="showhide()">
+			Schedule
+		</div></a> <a href="#media">
+		<div class="tabmob" onclick="showhide()">
+			Media
+		</div></a> <a href="#about">
+		<div class="tabmob" onclick="showhide()">
+			About
+		</div></a> <a href="#contact">
+		<div class="tabmob" onclick="showhide()">
+			Contact
+		</div></a>
+		<div style=
+		"background-color: #272e68; display: inline-block; width: 100%; margin-top: 1px; height: 165px; padding-top: 20px; text-align: center;">
+			<h3 style=
+			"color: white; margin-bottom: 5px; letter-spacing: 1px; font-size: 20px; font-weight: 200;">
+			Our Social Handles</h3>
+			<div class="mhandle">
+				<a href="https://www.facebook.com/soundsofindiaig" target=
+				"_blank"><img class="mhandle-img" src="Images/fb.png"><span class=
+				"mhandles">&ensp;fb/soundsofindiaig</span></a>
+			</div>
+			<div class="mhandle">
+				<a href="https://www.youtube.com/channel/UCCSe_UIZLdQvBw0a77vqntQ" target=
+				"_blank"><img class="mhandle-img" src="Images/yt.png"><span class=
+				"mhandles">&ensp;youtube/soundsofindiaig</span></a>
+			</div>
+			<div class="mhandle">
+				<a href="https://t.me/soundsofindia" target="_blank"><img class=
+				"mhandle-img" src="Images/tg.png"><span class=
+				"mhandles">&ensp;t.me/soundsofindia</span></a>
+			</div>
+		</div>
 	</div>
-	</div>
-
-
-	<!--page -->
+	<!--Page Header-->
 	<div id="home" style="padding-top: 40px;"></div>
 	<div id="start">
 		<h1>SOUNDS OF INDIA</h1>
 		<h2>INDIAN MUSIC REDEFINED</h2>
 		<div id="social-handles" style="color: white;">
-
-		<a href="https://www.facebook.com/soundsofindiaig" target="_blank">
-		<img src="Images/fb.png"><span class="handles  mobile-hide">fb/soundsofindiaig</span>
-		<span class="handles pc-hide">FaceBook</span></a>
-
-		<span class="handles-seperator">&ensp;|&ensp;</span>
-
-		<a href="https://www.youtube.com/channel/UCCSe_UIZLdQvBw0a77vqntQ" target="_blank">
-		<img src="Images/yt.png"><span class="handles  mobile-hide">youtube/soundsofindiaig</span>
-		<span class="handles pc-hide">YouTube</span></a>
-
-		<span class="handles-seperator">&ensp;|&ensp;</span>
-
-		<a href="https://t.me/soundsofindia" target="_blank">
-		<img src="Images/tg.png"><span class="handles mobile-hide">t.me/soundsofindia</span>
-		<span class="handles pc-hide">Telegram</span></a>
+			<a href="https://www.facebook.com/soundsofindiaig" target="_blank"><img src=
+			"Images/fb.png"><span class="handles mobile-hide">fb/soundsofindiaig</span>
+			<span class="handles pc-hide">FaceBook</span></a> <span class=
+			"handles-seperator">&ensp;|&ensp;</span> <a href=
+			"https://www.youtube.com/channel/UCCSe_UIZLdQvBw0a77vqntQ" target=
+			"_blank"><img src="Images/yt.png"><span class=
+			"handles mobile-hide">youtube/soundsofindiaig</span> <span class=
+			"handles pc-hide">YouTube</span></a> <span class=
+			"handles-seperator">&ensp;|&ensp;</span> <a href=
+			"https://t.me/soundsofindia" target="_blank"><img src=
+			"Images/tg.png"><span class="handles mobile-hide">t.me/soundsofindia</span>
+			<span class="handles pc-hide">Telegram</span></a>
 		</div>
 	</div>
-
+	<!--Schedule section-->
 	<div id="schedule" style="padding-top: 40px;"></div>
-	<div class="bar">SCHEDULE</div>
+	<div class="bar">
+		SCHEDULE
+	</div>
+	<!--Cards Container-->
 	<div id="cards-container">
-
-	<div class="cards">
-		<div class="card-title">Dasavani Season 2<br><h2 class="series-title">PURANDARA<br>DASAR</h2>
-		<span style="color: tomato;" class="schedule-status">Ongoing Series (21st Feb to 6th Mar)</span>
+		<div class="cards">
+			<div class="card-title">
+				Dasavani Season 2<br>
+				<h2 class="series-title">PURANDARA<br>
+				DASAR</h2><span class="schedule-status" style="color: tomato;">Ongoing
+				Series (21st Feb to 6th Mar)</span>
+			</div>
+			<div class="card-details">
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Neene Anatha Bandhu • Sri. Venkatesh
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Eepariya Sobagava • Sri. Srinivas
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Harinarayana Enu • Sri. Aditya Mohan
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Ninna Nodi • Kum. Janani Narasimhan
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Venkata Ramanane • Kum. Sangeeta
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Tamburi Meetidava • Sri. Balaji Natesh
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Govindha Ninna • Kum. Meenakshi
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Duru Maduvarene • Kum. Bharathi Rotti
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Ramanama Payasake • Kum. Kavya
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Hari Smarane • Sri. Kiran Balakrishnan
+					</div><a class="watch-button" href=
+					"https://www.facebook.com/soundsofindiaig/videos" target=
+					"_blank">Watch</a>
+				</div>
+			</div>
 		</div>
-		<div class="card-details">
-			<div class="card-inner-container">
-			<div class="card-inner-details">Neene Anatha Bandhu • Sri. Venkatesh</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
+		<div class="cards">
+			<div class="card-title">
+				Dasavani Season 1<br>
+				<h2 class="series-title">BADRACHALA<br>
+				RAMADASAR</h2><span class="schedule-status" style="color: lime;">Completed
+				Series (1st Feb to 14th Feb)</span>
 			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Eepariya Sobagava • Sri. Srinivas</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
+			<div class="card-details">
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Ee Vela Nannu • Sri. O S Mukundan
+					</div><a class="watch-button" href="https://fb.watch/3NLGV9bvUI/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Edanunaado • Sri. Shankar Mohanram
+					</div><a class="watch-button" href="https://fb.watch/3NYovgBoEO/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Kalaye Gopalam • Sri. P S Ramachandran
+					</div><a class="watch-button" href="https://fb.watch/3NYptoRvG8/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Kurume Raghuvara • Sri. Ramanathan
+					</div><a class="watch-button" href="https://fb.watch/3NYqlBX-v5/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Nanu Brovamani • Sri. Srinivasan
+					</div><a class="watch-button" href="https://fb.watch/3NYr5t1CSf/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Bhavaye • Sri. P S Ramachandran
+					</div><a class="watch-button" href="https://fb.watch/3NYrM3htN_/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Ento Mahanubhavudu • Sri. Srinidhi G
+					</div><a class="watch-button" href="https://fb.watch/3NYvPmvB5u/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Sri Ramula • Sri. Santosh Sundaram
+					</div><a class="watch-button" href="https://fb.watch/3NYtfR41ZO/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						Palaya maam • Sri. Satish Sundaram
+					</div><a class="watch-button" href="https://fb.watch/3NYug1fNXx/" target=
+					"_blank">Watch</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						O Rama Nee • Sri. Kumar Krishnan
+					</div><a class="watch-button" href="https://fb.watch/3NYv3dvTTR/" target=
+					"_blank">Watch</a>
+				</div>
 			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Harinarayana Enu • Sri. Aditya Mohan</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>	
-			<div class="card-inner-container">
-			<div class="card-inner-details">Ninna Nodi • Kum. Janani Narasimhan</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Venkata Ramanane • Kum. Sangeeta</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Tamburi Meetidava • Sri. Balaji Natesh</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Govindha Ninna • Kum. Meenakshi</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Duru Maduvarene • Kum. Bharathi Rotti</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Ramanama Payasake • Kum. Kavya</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Hari Smarane • Sri. Kiran Balakrishnan</div>
-			<a class="watch-button" href="https://www.facebook.com/soundsofindiaig/videos" target="_blank">Watch</a>
-			</div>
-		</div>
+		</div><br>
+		<div class="cards">
+		<div class="card-title">
+			Dasavani Season 3<br>
+			<h2 class="series-title">SADASHIVA<br>
+			BRAHMENDRAL</h2><span class="schedule-status" style="color: skyblue;">Coming
+			soon</span>
+		</div><img src="Images/krishna.jpg" style=
+		"width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;"></div>
+		<div class="cards">
+		<div class="card-title">
+			Dasavani Season 4<br>
+			<h2 class="series-title">GOPALAKRISHNA<br>
+			BHARATHI</h2><span class="schedule-status" style="color: skyblue;">Coming
+			soon</span>
+		</div><img src="Images/shiva.jpg" style=
+		"width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;"></div>
+		<div class="cards">
+		<div class="card-title">
+			Dasavani Season 5<br>
+			<h2 class="series-title">THYAGARAJA<br>
+			SWAMIGAL</h2><span class="schedule-status" style="color: skyblue;">Coming
+			soon</span>
+		</div><img src="Images/rama.jpg" style=
+		"width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;"></div>
 	</div>
-
-	<div class="cards">
-		<div class="card-title">Dasavani Season 1<br><h2 class="series-title">BADRACHALA<br>RAMADASAR</h2>
-		<span style="color: lime;" class="schedule-status">Completed Series (1st Feb to 14th Feb)</span>
-		</div>
-		<div class="card-details">
-			<div class="card-inner-container">
-			<div class="card-inner-details">Ee Vela Nannu • Sri. O S Mukundan</div>
-			<a class="watch-button" href="https://fb.watch/3NLGV9bvUI/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Edanunaado • Sri. Shankar Mohanram</div>
-			<a class="watch-button" href="https://fb.watch/3NYovgBoEO/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Kalaye Gopalam • Sri. P S Ramachandran</div>
-			<a class="watch-button" href="https://fb.watch/3NYptoRvG8/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Kurume Raghuvara • Sri. Ramanathan </div>
-			<a class="watch-button" href="https://fb.watch/3NYqlBX-v5/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Nanu Brovamani • Sri. Srinivasan </div>
-			<a class="watch-button" href="https://fb.watch/3NYr5t1CSf/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Bhavaye • Sri. P S Ramachandran </div>
-			<a class="watch-button" href="https://fb.watch/3NYrM3htN_/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Ento Mahanubhavudu • Sri. Srinidhi G </div>
-			<a class="watch-button" href="https://fb.watch/3NYvPmvB5u/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Sri Ramula • Sri. Santosh Sundaram </div>
-			<a class="watch-button" href="https://fb.watch/3NYtfR41ZO/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">Palaya maam • Sri. Satish Sundaram </div>
-			<a class="watch-button" href="https://fb.watch/3NYug1fNXx/" target="_blank">Watch</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">O Rama Nee • Sri. Kumar Krishnan </div>
-			<a class="watch-button" href="https://fb.watch/3NYv3dvTTR/" target="_blank">Watch</a>
-			</div>
-		</div>
-	</div>	
-
-	<br>
-
-	<div class="cards">
-		<div class="card-title">Dasavani Season 3<br><h2 class="series-title">SADASHIVA<br>BRAHMENDRAL</h2>
-		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
-		</div>
-
-		<img src="Images/krishna.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >	
-	</div>
-
-	<div class="cards">
-		<div class="card-title">Dasavani Season 4<br><h2 class="series-title">GOPALAKRISHNA<br>BHARATHI</h2>
-		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
-		</div>
-
-		<img src="Images/shiva.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >	
-	</div>
-
-	<div class="cards">
-		<div class="card-title">Dasavani Season 5<br><h2 class="series-title">THYAGARAJA<br>SWAMIGAL</h2>
-		<span style="color: skyblue;" class="schedule-status">Coming soon</span>
-		</div>
-
-		<img src="Images/rama.jpg" style="width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;" >	
-	</div>
-
-	
-	</div>
-	</div>
-
+	<!--Media section-->
 	<div id="media" style="padding-top: 40px;"></div>
-	<div class="bar">MEDIA</div>
+	<div class="bar">
+		MEDIA
+	</div>
 	<center>
-	<div class="media-header">Most Popular Video on our FaceBook Page</div>
-	<div id="video-container">
-	<iframe id="video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fvideos%2F1142330492875431%2F"></iframe>
-	</div>
-	<div class="media-header">Image Gallery</div>
-	<div id="image-gallery">
-		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F254675852920691"></iframe>
-		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F243676567353953"></iframe>
-		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F254681676253442"></iframe>
-		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F255767919478151"></iframe>
-	</div>
-	<div class="media-header">Our Blogs</div>
-	<div class="blogs">
-		<div class="card-details">
-			<div class="card-inner-container">
-			<div class="card-inner-details">05th March 2021| Name of Blog 1</div>
-			<a class="watch-button" href="" target="_blank">View</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">10th March 2021| Name of Blog 2 here</div>
-			<a class="watch-button" href="" target="_blank">View</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">15th March 2021| Name of new Blog 3</div>
-			<a class="watch-button" href="" target="_blank">View</a>
-			</div>
-			<div class="card-inner-container">
-			<div class="card-inner-details">25th March 2021| Name of Blog 4</div>
-			<a class="watch-button" href="" target="_blank">View</a>
+		<div class="media-header">
+			Most Popular Video on our FaceBook Page
+		</div>
+		<div id="video-container">
+			<iframe id="video" name="video" src=
+			"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fvideos%2F1142330492875431%2F">
+			</iframe>
+		</div>
+		<div class="media-header">
+			Image Gallery
+		</div>
+		<div id="image-gallery">
+			<iframe src=
+			"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F254675852920691">
+			</iframe> <iframe src=
+			"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F243676567353953">
+			</iframe> <iframe src=
+			"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F254681676253442">
+			</iframe> <iframe src=
+			"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F255767919478151">
+			</iframe>
+		</div>
+		<div class="media-header">
+			Our Blogs
+		</div>
+		<div class="blogs">
+			<div class="card-details">
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						05th March 2021| Name of Blog 1
+					</div><a class="watch-button" href="" target="_blank">View</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						10th March 2021| Name of Blog 2 here
+					</div><a class="watch-button" href="" target="_blank">View</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						15th March 2021| Name of new Blog 3
+					</div><a class="watch-button" href="" target="_blank">View</a>
+				</div>
+				<div class="card-inner-container">
+					<div class="card-inner-details">
+						25th March 2021| Name of Blog 4
+					</div><a class="watch-button" href="" target="_blank">View</a>
+				</div>
 			</div>
 		</div>
-
-</center>
-	<div id="about" style="padding-top: 40px;"></div>
-	<div class="bar">ABOUT</div>
-	<center>
-	<img id="about-logo" src="Images/soi_logo.png">
-	<div class="about-details">
-		Sounds Of India is a page made and managed by youngsters to exclusively promote Indian Music.
-		The SOI Page was created with an aim to spread all forms of Indian Music among the youngsters during the lockdown.<br><br>
-		Sounds Of India is a page made and managed by youngsters to exclusively promote Indian Music.
-		<br>
-		The SOI Page was created with an aim to spread all forms of Indian Music among the youngsters during the lockdown.<br>
-	</div>
-</center>
-
-	<div id="contact" style="padding-top: 40px;"></div>
-	<div class="bar">CONTACT</div>
-	<center>
-	<div id="contact-form">
-	<h3>Enter your Full Name <sup>*</sup></h3><input type="text" id="fromName" required><br>
-	<h3>Enter your Contact Number <sup>*</sup></h3><input type="tel" id="phoneNumber" required><br>
-	<h3>Enter your mail-Id <sup>*</sup></h3><input type="email" id="mailId" required><br>
-	<h3>Comments :</h3><textarea id="comment" rows="2"></textarea><br>
-	<button onclick="sendMail()" disabled>Contact Us</button>
-	</div>
 	</center>
-
-	<div id="footer">This site is Developed & Managed by Iyer Hariharan Ramachandran.</div>
-
+	<!--About section-->
+	<div id="about" style="padding-top: 40px;"></div>
+	<div class="bar">
+		ABOUT
+	</div>
+	<center>
+		<img id="about-logo" src="Images/soi_logo.png">
+		<div class="about-details">
+			Sounds Of India is a page made and managed by youngsters to exclusively
+			promote Indian Music. The SOI Page was created with an aim to spread all
+			forms of Indian Music among the youngsters during the lockdown.<br>
+			<br>
+			Sounds Of India is a page made and managed by youngsters to exclusively
+			promote Indian Music.<br>
+			The SOI Page was created with an aim to spread all forms of Indian Music
+			among the youngsters during the lockdown.<br>
+		</div>
+	</center>
+	<!--Contact section-->
+	<div id="contact" style="padding-top: 40px;"></div>
+	<div class="bar">
+		CONTACT
+	</div>
+	<center>
+		<div id="contact-form">
+			<h3>Enter your Full Name <sup>*</sup></h3><input id="fromName" required=""
+			type="text"><br>
+			<h3>Enter your Contact Number <sup>*</sup></h3><input id="phoneNumber"
+			required="" type="tel"><br>
+			<h3>Enter your mail-Id <sup>*</sup></h3><input id="mailId" required="" type=
+			"email"><br>
+			<h3>Comments :</h3>
+			<textarea id="comment" rows="2"></textarea><br>
+			<button disabled onclick="sendMail()">Contact Us</button>
+		</div>
+	</center>
+	<!--Page Footer-->
+	<div id="footer">
+		This site is Developed & Managed by Iyer Hariharan Ramachandran.
+	</div>
 </body>
 </html>
