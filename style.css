@@ -127,7 +127,7 @@ img{
 	width: 400px;
 	height: 600px;
 	margin: 20px 10px 10px 10px; 
-	border-radius: 7px;
+	border-radius: 5px;
 	float: unset;
 	display: inline-block;
 	background-image: url("Images/bg3.jpg");
@@ -289,4 +289,103 @@ sup{
 	letter-spacing: .5px;
 	box-shadow: 4px 0px 8px rgba(0,0,0,0.3);
 	border-top: solid 1px #272e68;
+}
+
+#video{
+	text-align: center;
+	border:none;
+	overflow:hidden;
+	border-radius: 3px;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	width: 700px;
+	height: 440px;
+	background-color: black;
+	border: solid 5px white;
+}
+
+#video-container{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.media-header{
+	margin-top: 20px;
+	float: unset;
+	text-align: center;
+	width: 700px;
+	border-radius: 3px;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+	background-image: url("Images/bg2.jpg");
+  	background-size: cover;
+  	border: solid 5px white;
+	color: white;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 15px;
+	padding-top: 18px;
+}
+
+#image-gallery{
+	margin-top: 20px;
+	width: 700px;
+	float: unset;
+}
+#image-gallery iframe{
+	width: 336px;
+	height: 336px;
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: solid 5px white;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+.blogs{
+	width: 700px;
+	height: 200px;
+	margin: 20px 10px 10px 10px; 
+	border-radius: 5px;
+	padding-left: 100px;
+	padding-right: 100px;
+	float: unset;
+	display: inline-block;
+	background-image: url("Images/bg3.jpg");
+	background-size: cover;
+	border:solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	text-align: center;
+	vertical-align: middle;
+}
+
+#about-logo{
+	float: unset;
+	padding: 50px;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	margin: 20px;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+.about-details{
+	width: 500px;
+	height: 300px;
+	margin: 20px; 
+	border-radius: 5px;
+	float: unset;
+	display: inline-block;
+	background-image: url("Images/bg3.jpg");
+	background-size: cover;
+	border:solid 5px white;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-weight: 400;
+	padding: 20px;
+	line-height: 1.1;
+	letter-spacing: 2px;
+
 }

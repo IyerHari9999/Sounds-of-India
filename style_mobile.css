@@ -163,12 +163,12 @@ h2{
   width: 300px;
   height: 500px;
   margin: 20px 10px 10px 10px; 
-  border-radius: 7px;
+  border-radius: 5px;
   float: unset;
   display: inline-block;
   background-image: url("Images/bg3.jpg");
   background-size: cover;
-  border:solid 5px white;
+  border:solid 3px white;
   box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
   text-align: center;
   vertical-align: middle;
@@ -356,6 +356,80 @@ sup{
     letter-spacing: 1px;
     color: skyblue;
   font-size: 18px;
+}
+#video{
+  width: 300px;
+  height: 180px;
+  border: solid 3px white;
+}
+
+.media-header{
+  width: 300px;
+  font-size: 16px;
+  border: solid 3px white;
+  }
+
+#image-gallery{
+  margin-top: 20px;
+  width: 300px;
+  float: unset;
+}
+#image-gallery iframe{
+  width: 300px;
+  height: 300px;
+  margin-left: 0px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: solid 3px white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+.blogs{
+  width: 300px;
+  height: 150px;
+  padding:0px;
+  margin: 20px 10px 10px 10px; 
+  border-radius: 7px;
+  float: unset;
+  display: inline-block;
+  background-image: url("Images/bg3.jpg");
+  background-size: cover;
+  border:solid 3px white;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+  text-align: center;
+  vertical-align: middle;
+}
+#about-logo{
+  float: unset;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+.about-details{
+  width: 300px;
+  height: 300px;
+  margin: 20px; 
+  border-radius: 5px;
+  float: unset;
+  font-size: 16px;
+  display: inline-block;
+  background-image: url("Images/bg3.jpg");
+  background-size: cover;
+  border:solid 5px white;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: 400;
+  padding: 20px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+
 }
 
 }
