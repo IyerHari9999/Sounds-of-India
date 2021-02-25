@@ -140,7 +140,7 @@
   }
   .cards {
     width: 300px;
-    height: 500px;
+    height: 510px;
     margin: 20px 10px 10px 10px;
     border-radius: 5px;
     float: unset;
@@ -166,31 +166,64 @@
     background-color: rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     margin-top: 20px;
+    margin-bottom: 10px
   }
   .card-details {
-    width: 100%;
-    padding: 11px;
-    display: inline-block;
-    color: white;
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 120%;
-    text-align: left;
-  }
+  width: 100%;
+  padding: 1px;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.card-inner-details {
+  padding: 5px 0px 3px 0px;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+.card-inner-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.schedule-status {
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.watch-button {
+  text-align: center;
+  background-color: #272e68;
+  color: white;
+  border: solid 1px white;
+  display: inline-block;
+  margin: 4px 0px 2px 0px;
+  padding: 6px 10px 4px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  width: 85%;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.watch-button:hover {
+  background-color: white;
+  color: #272e68;
+  border: solid 1px #272e68;
+}
   .cards:nth-child(5) {
     display: none;
   }
   .cards:nth-child(6) {
     display: none;
-  }
-  .card-inner-details {
-    padding: 5px 0px 3px 0px;
-    display: inline-block;
-    float: left;
-  }
-  .card-inner-container {
-    display: inline-block;
-    width: 100%;
   }
   .series-title {
     font-size: 28px;
@@ -201,25 +234,7 @@
     font-size: 14px;
     font-weight: normal;
   }
-  .watch-button {
-    text-align: center;
-    float: right;
-    background-color: #272e68;
-    color: white;
-    border: solid .1px white;
-    display: inline-block;
-    margin: 1px 0px 1px 0px;
-    padding: 2px 5px 0px 5px;
-    border-radius: 3px;
-    font-size: 13px;
-    text-align: center;
-    width: 45px;
-    font-weight: normal;
-  }
-  .watch-button:hover {
-    background-color: white;
-    color: #272e68;
-  }
+
   #contact-form {
     text-align: left;
     float: unset;
@@ -343,7 +358,7 @@
   }
   .blogs {
     width: 300px;
-    height: 150px;
+    height: 330px;
     padding: 0px;
     margin: 20px 10px 10px 10px;
     border-radius: 7px;
@@ -356,34 +371,70 @@
     text-align: center;
     vertical-align: middle;
   }
-  #about-logo {
-    float: unset;
-    padding: 30px;
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    margin: 20px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-  }
-  .about-details {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 5px;
-    float: unset;
-    font-size: 15px;
-    display: inline-block;
-    background-image: url("Images/bg3.jpg");
-    background-size: cover;
-    border: solid 5px white;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    font-weight: 400;
-    padding: 20px;
-    line-height: 1.2;
-    letter-spacing: 2px;
+  .blog-details{
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.blog-inner-container{
+  width: 280px;
+  display: inline-block;
+  float: unset;
+  text-align: center;
+}
+
+.blog-inner-details{
+  padding-top: 5px;
+  display: inline-block;
+}
+.blog-button {
+  text-align: center;
+  float: unset;
+  background-color: #272e68;
+  color: white;
+  border: solid 1px white;
+  display: inline-block;
+  margin: 8px 0px 10px 0px;
+  padding: 6px 10px 4px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+  width: 90%;
+  letter-spacing: 1px;
+}
+
+.blog-button:hover {
+  background-color: white;
+  color: #272e68;
+  border: solid 1px #272e68;
+}
+
+.about-details {
+  width: 300px;
+  height: 320px;
+  margin: 20px;
+  border-radius: 3px;
+  float: unset;
+  display: inline-block;
+  background-image: url("Images/bg3.jpg");
+  background-size: cover;
+  border: solid 3px white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px;
+  line-height: 1.1;
+  letter-spacing: 1px;
   }
 }
