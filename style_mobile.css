@@ -219,10 +219,10 @@
   color: #272e68;
   border: solid 1px #272e68;
 }
-  .cards:nth-child(5) {
+  .cards:nth-child(4) {
     display: none;
   }
-  .cards:nth-child(6) {
+  .cards:nth-child(5) {
     display: none;
   }
   .series-title {
@@ -333,7 +333,7 @@
   }
   #video {
     width: 300px;
-    height: 180px;
+    height: 175px;
     border: solid 3px white;
   }
   .media-header {
@@ -419,7 +419,7 @@
 
 .about-details {
   width: 300px;
-  height: 320px;
+  height: 340px;
   margin: 20px;
   border-radius: 3px;
   float: unset;
