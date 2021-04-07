@@ -51,18 +51,33 @@
     border-bottom-right-radius: 3px;
     box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.5);
   }
+
+  #black-side{
+    position: fixed;
+    display: inline-block;
+    float: left;
+    opacity: 70%;
+    background-color: black;
+    width: 100%;
+    height: 200%;
+    display: none;
+  }
   .tabmob {
     float: right;
     font-size: 20px;
-    width: 100%;
-    padding: 22px 0px 20px 0px;
+    width: 90%;
+    padding: 15px 0px 14px 0px;
     text-align: center;
     letter-spacing: 2px;
     background-color: #272e68;
     color: white;
-    margin-bottom: 1px;
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-left: 4%;
+    margin-right: 5%;
     font-weight: normal;
   }
+
   .tabmob:hover {
     background-color: #d6ddff;
     color: #272e68;
@@ -115,7 +130,6 @@
     height: 14px;
   }
   .handles {
-    color: white;
     font-size: 13px;
     padding: 0px 0px 0px 3px;
     font-weight: 400;
@@ -125,7 +139,7 @@
     font-size: 13px;
   }
   .bar {
-    height: 60px;
+    height: 65px;
     border-top: solid 5px white;
     border-bottom: solid 5px white;
     background-image: url("Images/bg2.jpg");
@@ -219,10 +233,13 @@
   color: #272e68;
   border: solid 1px #272e68;
 }
-  .cards:nth-child(4) {
+  .cards:nth-child(1) {
     display: none;
   }
-  .cards:nth-child(5) {
+  .cards:nth-child(2) {
+    display: none;
+  }
+  .cards:nth-child(6) {
     display: none;
   }
   .series-title {
@@ -418,23 +435,10 @@
 }
 
 .about-details {
-  width: 300px;
-  height: 340px;
+  width: 80%;
   margin: 20px;
-  border-radius: 3px;
-  float: unset;
-  display: inline-block;
-  background-image: url("Images/bg3.jpg");
-  background-size: cover;
-  border: solid 3px white;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
-  padding: 20px;
-  line-height: 1.1;
-  letter-spacing: 1px;
+  padding: 25px 15px 25px 15px;
   }
 }

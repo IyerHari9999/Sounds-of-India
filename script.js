@@ -24,6 +24,12 @@ function sendMail(params) {
 }
 
 function showhide() {
+	var div = document.getElementById("black-side");
+	if (div.style.display != "none") {
+		div.style.display = "none";
+	} else {
+		div.style.display = "block";
+	}
 	var div = document.getElementById("sidebar");
 	if (div.style.display != "none") {
 		div.style.display = "none";
