@@ -10,16 +10,6 @@
 	<link href=
 	"https://fonts.googleapis.com/css2?family=Leckerli+One&family=Yanone+Kaffeesatz:wght@200;400;500;600;700&display=swap"
 	rel="stylesheet">
-	<script src="script.js" type="text/javascript">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-	type="text/javascript">
-	</script>
-	<script type="text/javascript">
-	   (function() {
-	   emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
-	   })();
-	</script>
 </head>
 <body onload="showhide()">
 	<!--Menubar for pc-->
@@ -38,19 +28,18 @@
 			</div></a> <a href="team.html">
 			<div class="tab">
 				Team
-			</div></a><a href="#about">
+			</div></a> <a href="#about">
 			<div class="tab">
 				About
-			</div></a>  <a href="#schedule">
+			</div></a> <a href="#schedule">
 			<div class="tab">
 				Schedule
-			</div></a> <a href="#home">
+			</div></a> <a href="http://thesoundsofindia.co.in">
 			<div class="tab">
 				Home
 			</div></a>
 		</div>
-	</div>
-	<!--Menubar, Hamburger & Sidebar for mobile-->
+	</div><!--Menubar, Hamburger & Sidebar for mobile-->
 	<div class="pc-hide" id="mobile-navbar">
 		<div id="hamburger" onclick="showhide()">
 			<hr>
@@ -58,48 +47,41 @@
 			<hr>
 		</div>
 		<div id="mobile-logo">
-			<!--img src="Images/soi_logo.png" style="height: 35px; vertical-align: middle; margin: 12px 5px 6px -5px; display: inline-block; padding-bottom: 10px;"-->
 			<div style=
-			" display: inline-block; font-size: 20px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 11px; padding-left: -1;">
+			"display: inline-block; font-size: 20px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 11px; padding-left: -1;">
 				Sounds of India
 			</div>
 		</div>
 	</div>
-	<div onclick="showhide()" id="black-side">	
-		</div>
+	<div id="black-side" onclick="showhide()"></div>
 	<div class="pc-hide" id="sidebar">
-			<center style=
-			"margin-top: 10px;">
-				<img src="Images/soi_logo.png" style=
-				"height: 38px; vertical-align: middle; margin: 10px 2px 4px 0px; display: inline-block; padding-bottom: 10px;">
-				<div style=
-				" display: inline-block; font-size: 19px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 9px; padding-left: -1;">
-					Sounds of India
-				</div>
-			</center>
-			<!--div id="cross-box" onclick="showhide()">
-				<img src="Images/cross.png">
-			</div-->
-		<center>
-		<a href="#home">
-		<div class="tabmob" onclick="showhide()">
-			Home
-		</div></a> <a href="#schedule">
-		<div class="tabmob" onclick="showhide()">
-			Schedule
-		</div></a> <a href="#about">
-		<div class="tabmob" onclick="showhide()">
-			About
-		</div></a>  <a href="team.html">
-		<div class="tabmob" onclick="showhide()">
-			Team
-		</div></a> <a href="#contact">
-		<div class="tabmob" onclick="showhide()">
-			Contact
-		</div></a>
+		<center style="margin-top: 10px;">
+			<img src="Images/soi_logo.png" style=
+			"height: 38px; vertical-align: middle; margin: 10px 2px 4px 0px; display: inline-block; padding-bottom: 10px;">
+			<div style=
+			" display: inline-block; font-size: 19px; color: #272e68; font-family: 'Leckerli One',cursive; letter-spacing: -1px; margin-top: 9px; padding-left: -1;">
+				Sounds of India
+			</div>
 		</center>
-	</div>
-	<!--Page Header-->
+		<center>
+			<a href="http://thesoundsofindia.co.in">
+			<div class="tabmob" onclick="showhide()">
+				Home
+			</div></a> <a href="#schedule">
+			<div class="tabmob" onclick="showhide()">
+				Schedule
+			</div></a> <a href="#about">
+			<div class="tabmob" onclick="showhide()">
+				About
+			</div></a> <a href="team.html">
+			<div class="tabmob" onclick="showhide()">
+				Team
+			</div></a> <a href="#contact">
+			<div class="tabmob" onclick="showhide()">
+				Contact
+			</div></a>
+		</center>
+	</div><!--Page Header-->
 	<div id="home" style="padding-top: 40px;"></div>
 	<div id="start">
 		<h1>SOUNDS OF INDIA</h1>
@@ -118,14 +100,12 @@
 			"Images/tg.png"><span class="handles mobile-hide">t.me/soundsofindia</span>
 			<span class="handles pc-hide">Telegram</span></a>
 		</div>
-	</div>
-	<!--Schedule section-->
+	</div><!--Schedule section-->
 	<div id="schedule" style="padding-top: 40px;"></div>
 	<div class="bar">
 		SCHEDULE
-	</div>
-	<!--Cards Container-->
-	<div id="cards-container">	
+	</div><!--Cards Container-->
+	<div id="cards-container">
 		<div class="cards">
 			<div class="card-title">
 				Dasavani Season 1<br>
@@ -183,9 +163,9 @@
 					<div class="card-inner-details">
 						14th Feb | O Rama Nee | Sri. Kumar Krishnan
 					</div>
-				</div>
-				<a class="watch-button" href="https://www.facebook.com/watch/101896131531998/451258035921073" target=
-					"_blank">View Full Playlist</a>
+				</div><a class="watch-button" href=
+				"https://www.facebook.com/watch/101896131531998/451258035921073" target=
+				"_blank">View Full Playlist</a>
 			</div>
 		</div>
 		<div class="cards">
@@ -245,10 +225,9 @@
 					<div class="card-inner-details">
 						6th Mar | Hari Smarane | Sri. Kiran Balakrishnan
 					</div>
-				</div>
-				<a class="watch-button" href="
-					https://www.facebook.com/watch/101896131531998/1376814826019970" target=
-					"_blank">View Full Playlist</a>
+				</div><a class="watch-button" href=
+				"https://www.facebook.com/watch/101896131531998/1376814826019970" target=
+				"_blank">View Full Playlist</a>
 			</div>
 		</div>
 		<div class="cards">
@@ -266,7 +245,7 @@
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						13th Mar| Piravaatha Varam  | Sri. Girish Balaji
+						13th Mar| Piravaatha Varam | Sri. Girish Balaji
 					</div>
 				</div>
 				<div class="card-inner-container">
@@ -276,12 +255,12 @@
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						15th Mar  | Yeppo Varuvaaro | Janany & Srinidhi
+						15th Mar | Yeppo Varuvaaro | Janany & Srinidhi
 					</div>
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						17th Mar  | Irakkam Varaamal | Sri. Karthick
+						17th Mar | Irakkam Varaamal | Sri. Karthick
 					</div>
 				</div>
 				<div class="card-inner-container">
@@ -296,7 +275,7 @@
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						21st Mar  | Thiruvadi charanam | Kum. Raksha S
+						21st Mar | Thiruvadi charanam | Kum. Raksha S
 					</div>
 				</div>
 				<div class="card-inner-container">
@@ -308,9 +287,9 @@
 					<div class="card-inner-details">
 						24th Mar | Aadiya paadame | Kum. Kanakavalli S
 					</div>
-				</div>
-				<a class="watch-button" href="https://www.facebook.com/watch/101896131531998/237850804708749" target=
-					"_blank">View Full Playlist</a>
+				</div><a class="watch-button" href=
+				"https://www.facebook.com/watch/101896131531998/237850804708749" target=
+				"_blank">View Full Playlist</a>
 			</div>
 		</div>
 		<div class="cards">
@@ -333,17 +312,17 @@
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						2nd Apr | Neethihatha hitha | Smt. Santhala Raju 
+						2nd Apr | Neethihatha hitha | Smt. Santhala Raju
 					</div>
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						3rd Apr  | Saroruhasana Jaye | M M Rajalakshmi
+						3rd Apr | Saroruhasana Jaye | M M Rajalakshmi
 					</div>
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						4th Apr  | Sarasijhanabha| Kum. Parama Chitaguppa
+						4th Apr | Sarasijhanabha| Kum. Parama Chitaguppa
 					</div>
 				</div>
 				<div class="card-inner-container">
@@ -358,7 +337,7 @@
 				</div>
 				<div class="card-inner-container">
 					<div class="card-inner-details">
-						9th Apr  | Deva Deva | HariKrishnan & Sruthy
+						9th Apr | Deva Deva | HariKrishnan & Sruthy
 					</div>
 				</div>
 				<div class="card-inner-container">
@@ -370,12 +349,11 @@
 					<div class="card-inner-details">
 						11th Apr | Saarasa Samamuga | Padmaja & Lakshmi
 					</div>
-				</div>
-				<a class="watch-button" href="https://www.facebook.com/watch/101896131531998/886883832168479" target=
-					"_blank">View Full Playlist</a>
+				</div><a class="watch-button" href=
+				"https://www.facebook.com/watch/101896131531998/886883832168479" target=
+				"_blank">View Full Playlist</a>
 			</div>
 		</div>
-		
 		<div class="cards">
 		<div class="card-title">
 			Dasavani Season 5<br>
@@ -384,7 +362,6 @@
 			soon</span>
 		</div><img src="Images/thyagaraja.jpg" style=
 		"width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;"></div>
-
 		<div class="cards">
 		<div class="card-title">
 			Dasavani Season 6<br>
@@ -393,53 +370,7 @@
 			soon</span>
 		</div><img src="Images/muthuswamy.jpg" style=
 		"width: 80%; box-shadow: 0px 2px 20px rgba(0,0,0,0.6); border-radius: 5px; margin-top: 20px;"></div>
-
-	</div>
-	<!--Media section-->
-	<!--div id="media" style="padding-top: 40px;"></div-->
-	<!--div class="bar">
-		MEDIA
-	</div>
-	<center>
-		<div id="video-container">
-			<iframe id="video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fvideos%2F3902234273196731%2F&show_text=false&width=560"></iframe>
-		</div>
-
-		<div id="image-gallery">
-			<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F277517967303146&width=500&show_text=true&height=498&appId">
-			</iframe>
-			<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoundsofindiaig%2Fposts%2F267329601655316&width=500&show_text=true&height=497&appId">
-			</iframe>
-		</div-->
-		<!--div class="media-header">
-			Our Blogs
-		</div>
-		<div class="blogs">
-			<div class="blog-details">
-				<div class="blog-inner-container">
-					<div class="blog-inner-details">
-						1st March 2021| Namasankerthanam in Kaliyuga!
-					</div><a class="blog-button" href="" target="_blank">View Blog</a>
-				</div>
-				<div class="blog-inner-container">
-					<div class="blog-inner-details">
-						4th March 2021| What is Karma?
-					</div><a class="blog-button" href="" target="_blank">View Blog</a>
-				</div>
-				<div class="blog-inner-container">
-					<div class="blog-inner-details">
-						8th March 2021| Importance of Gurukrupai
-					</div><a class="blog-button" href="" target="_blank">View Blog</a>
-				</div>
-				<div class="blog-inner-container">
-					<div class="blog-inner-details">
-						11th March 2021| Glory of Lord Shiva
-					</div><a class="blog-button" href="" target="_blank">View Blog</a>
-				</div>
-				</div>
-			</div-->
-	</center>
-	<!--About section-->
+	</div><!--About section-->
 	<div id="about" style="padding-top: 40px;"></div>
 	<div class="bar">
 		ABOUT
@@ -447,18 +378,22 @@
 	<center>
 		<div class="about-details">
 			<div class="about-details-container">
-			<img src="Images/vishnu.jpg" style=
-			"width: 100%; border-radius: 5px;">
-			<br><br>
-			Sounds of India (SoI) is a page exclusively created by youngsters for promoting Indian Music among the youth by launching various events and organizing programmes and concerts through their Facebook page and YouTube Channel.<br><br>
-			The Page has organized many events like Bhajanotsavam in the Navaratri Season and various other Carnatic concerts. With the blessings and support of all currently the Dasavani Series (Compositions by Saints of India) is running with great success.
+				<img src="Images/vishnu.jpg" style="width: 100%; border-radius: 5px;"><br>
+				<br>
+				Sounds of India (SoI) is a page exclusively created by youngsters for
+				promoting Indian Music among the youth by launching various events and
+				organizing programmes and concerts through their Facebook page and YouTube
+				Channel.<br>
+				<br>
+				The Page has organized many events like Bhajanotsavam in the Navaratri
+				Season and various other Carnatic concerts. With the blessings and support
+				of all currently the Dasavani Series (Compositions by Saints of India) is
+				running with great success.
+			</div><br>
+			<br>
+			<a href="team.html"><button>More About Our Team</button></a>
 		</div>
-		<br>
-		<br>
-		<a href="team.html"><button>More About Our Team</button></a>
-		</div>
-	</center>
-	<!--Contact section-->
+	</center><!--Contact section-->
 	<div id="contact" style="padding-top: 40px;"></div>
 	<div class="bar">
 		CONTACT
@@ -475,10 +410,19 @@
 			<textarea id="comment" rows="2"></textarea><br>
 			<button onclick="sendMail()">Contact Us</button>
 		</div>
-	</center>
-	<!--Page Footer-->
+	</center><!--Page Footer-->
 	<div id="footer">
 		This site is Developed & Managed by Iyer Hariharan Ramachandran.
-	</div>
+	</div><!--Javascript-->
+	<script src="script.js" type="text/javascript">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+	type="text/javascript">
+	</script> 
+	<script type="text/javascript">
+	                     (function() {
+	                     emailjs.init("user_8fOQlfTYUTaHgDE14mWui");
+	                     })();
+	</script>
 </body>
 </html>

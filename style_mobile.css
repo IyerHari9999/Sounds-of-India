@@ -51,8 +51,7 @@
     border-bottom-right-radius: 3px;
     box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.5);
   }
-
-  #black-side{
+  #black-side {
     position: fixed;
     display: inline-block;
     float: left;
@@ -77,7 +76,6 @@
     margin-right: 5%;
     font-weight: normal;
   }
-
   .tabmob:hover {
     background-color: #d6ddff;
     color: #272e68;
@@ -183,56 +181,51 @@
     margin-bottom: 10px
   }
   .card-details {
-  width: 100%;
-  padding: 1px;
-  display: inline-block;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 120%;
-  text-align: center;
-}
-
-.card-inner-details {
-  padding: 5px 0px 3px 0px;
-  display: inline-block;
-  margin-bottom: 0px;
-  margin-bottom: 5px;
-}
-
-.card-inner-container {
-  display: inline-block;
-  width: 100%;
-}
-
-.schedule-status {
-  letter-spacing: 2px;
-  font-size: 15px;
-}
-
-.watch-button {
-  text-align: center;
-  background-color: #272e68;
-  color: white;
-  border: solid 1px white;
-  display: inline-block;
-  margin: 4px 0px 2px 0px;
-  padding: 6px 10px 4px 10px;
-  border-radius: 3px;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 700;
-  width: 85%;
-  letter-spacing: 1px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.watch-button:hover {
-  background-color: white;
-  color: #272e68;
-  border: solid 1px #272e68;
-}
+    width: 100%;
+    padding: 1px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 120%;
+    text-align: center;
+  }
+  .card-inner-details {
+    padding: 5px 0px 3px 0px;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-bottom: 5px;
+  }
+  .card-inner-container {
+    display: inline-block;
+    width: 100%;
+  }
+  .schedule-status {
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  .watch-button {
+    text-align: center;
+    background-color: #272e68;
+    color: white;
+    border: solid 1px white;
+    display: inline-block;
+    margin: 4px 0px 2px 0px;
+    padding: 6px 10px 4px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    width: 85%;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .watch-button:hover {
+    background-color: white;
+    color: #272e68;
+    border: solid 1px #272e68;
+  }
   .cards:nth-child(1) {
     display: none;
   }
@@ -251,7 +244,6 @@
     font-size: 14px;
     font-weight: normal;
   }
-
   #contact-form {
     text-align: left;
     float: unset;
@@ -348,97 +340,11 @@
     color: skyblue;
     font-size: 18px;
   }
-  #video {
-    width: 300px;
-    height: 175px;
-    border: solid 3px white;
-  }
-  .media-header {
-    width: 300px;
-    font-size: 16px;
-    border: solid 3px white;
-  }
-  #image-gallery {
-    margin-top: 20px;
-    width: 300px;
-    float: unset;
-  }
-  #image-gallery iframe {
-    width: 300px;
-    height: 300px;
-    margin-left: 0px;
-    margin-right: 0;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: solid 3px white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  .blogs {
-    width: 300px;
-    height: 330px;
-    padding: 0px;
-    margin: 20px 10px 10px 10px;
-    border-radius: 7px;
-    float: unset;
-    display: inline-block;
-    background-image: url("Images/bg3.jpg");
-    background-size: cover;
-    border: solid 3px white;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    vertical-align: middle;
-  }
-  .blog-details{
-  width: 100%;
-  padding: 10px;
-  display: inline-block;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 120%;
-  text-align: center;
-}
-
-.blog-inner-container{
-  width: 280px;
-  display: inline-block;
-  float: unset;
-  text-align: center;
-}
-
-.blog-inner-details{
-  padding-top: 5px;
-  display: inline-block;
-}
-.blog-button {
-  text-align: center;
-  float: unset;
-  background-color: #272e68;
-  color: white;
-  border: solid 1px white;
-  display: inline-block;
-  margin: 8px 0px 10px 0px;
-  padding: 6px 10px 4px 10px;
-  border-radius: 3px;
-  font-size: 12px;
-  text-align: center;
-  font-weight: 700;
-  width: 90%;
-  letter-spacing: 1px;
-}
-
-.blog-button:hover {
-  background-color: white;
-  color: #272e68;
-  border: solid 1px #272e68;
-}
-
-.about-details {
-  width: 80%;
-  margin: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 25px 15px 25px 15px;
+  .about-details {
+    width: 80%;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 15px 25px 15px;
   }
 }
